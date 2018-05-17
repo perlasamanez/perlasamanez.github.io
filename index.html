@@ -10,8 +10,8 @@
 
     <title>Home</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -25,10 +25,19 @@
 
     <style type="text/css">
     .display-4 {
-        font-weight: 500;
+      font-weight: 500;
     }
     .nice-bold{
-        font-weight: 600;
+      font-weight: 600;
+    }
+    .btn-primary{
+      background-color: #88a4e0;
+      border-color: #88a4e0;
+    }
+    @media (max-width: 576px) {
+      .display-4{
+        text-align: center;
+      }
     }
     </style>
 
@@ -54,7 +63,7 @@
               <a class="nav-link" href="resources.html">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://calendly.com/perladcs/" target="_blank">Appointments</a>
+              <a class="nav-link" href="http://life-as-cpe.blogspot.com/" target="_blank">Blog</a>
             </li>
           </ul>
         </div>
@@ -78,8 +87,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/perla.png" alt="">
+            <div class="p-5 text-center">
+              <img class="img-fluid rounded-circle center-block" src="img/perla.png" alt="Perla">
             </div>
           </div>
           <div class="col-md-6 order-1">
@@ -95,43 +104,61 @@
 
 <!-- End of About Me Section -->
 
-<!-- Recent Projects Portfolio -->
-    <section class="bg-light-gray" class="content-section" id="portfolio">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <div class="p-5">
-              <h2 class="display-4">Current Projects</h2>
-          </div>
+<!-- Portfolio Grid -->
+   <section class="bg-light" id="portfolio">
+     <div class="container">
+         <div class="content-section-heading text-center">
+           <div class="p-5">
+               <h2 class="display-4">Current Projects</h2>
+           </div>
+         </div>
+       <div class="row">
+         <div class="col-md-4 col-sm-6 portfolio-item">
+           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+             <div class="portfolio-hover">
+               <div class="portfolio-hover-content">
+                 <i class="fa fa-plus fa-3x"></i>
+               </div>
+             </div>
+             <img class="img-fluid" src="img/swechicas.jpg" alt="SWE Girls">
+           </a>
+           <div class="portfolio-caption">
+             <h4>SWE Website</h4>
+             <p class="text-muted">Website Dev.</p>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6 portfolio-item">
+           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+             <div class="portfolio-hover">
+               <div class="portfolio-hover-content">
+                 <i class="fa fa-plus fa-3x"></i>
+               </div>
+             </div>
+             <img class="img-fluid" src="img/knighthacks-thumb.jpg" alt="Knight Hacks">
+           </a>
+           <div class="portfolio-caption">
+             <h4>Knight Hacks 17</h4>
+             <p class="text-muted">Project Management</p>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6 portfolio-item">
+           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+             <div class="portfolio-hover">
+               <div class="portfolio-hover-content">
+                 <i class="fa fa-plus fa-3x"></i>
+               </div>
+             </div>
+             <img class="img-fluid" src="img/expiry-thumb.png" alt="Web App Picture">
+           </a>
+           <div class="portfolio-caption">
+             <h4>Expiry Web App</h4>
+             <p class="text-muted">Website Dev.</p>
+           </div>
+         </div>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/perlasamanez/SWE-Website" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <br><br><h2>Society of Women Engineers at UCF Website</h2>
-                  <p class="mb-2">By using bootstrap, I developed the new website SWE at UCF currently has. I re-designed and launched it this past August 2017 to approach new upcoming members in an easier way.<br>Date: July 2017-August 2017</p>
-                   <br><h2>(Click here to see the project in Github)</h2>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/swegirls.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="http://knighthacks.org/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <br><br><h2>Knight Hacks Hackathon (Organizer)</h2>
-                  <p class="mb-2">During my first and second year at UCF, I took part of the Knight Hacks Hackathon as one of the organizers of the event. Specifically, I was mostly coordinating the volunteers and mentors.<br> Date: October 7, 2017</p>
-                 <br><h2>(Click here to know more about Knight Hacks)</h2>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/hacks.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div><br><br><br>
-    </section>
-<!-- End of Recent Projects Portfolio -->
+       </div>
+     </div>
+   </section>
 
   <!-- Organizations Section -->
     <section>
@@ -139,12 +166,12 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/perlaknight.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/perlaknight.jpg" alt="Perla">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="p-5">
-              <h2 class="display-4">Clubs</h2>
+            <div class="p-4"><br>
+              <h2 class="display-4">Organizations</h2>
               <p class="nice-bold">Tech Knights | President (Spring 2018)</p>
               <p>Our mission is to promote creativity within the Computer Science and Engineering community by planning and executing the “Knight Hacks Hackathon”. We want to have students build projects and learn different technologies they wouldn’t learn in a regular classroom. To accomplish this, we host tech workshops throughout the academic year. Tech Knights is like a home to me, and I hope to keep contributing to this organization!</p>
               <p><a href="http://techknights.org/" target="_blank">Tech Knights Website</a></p><br>
@@ -184,6 +211,111 @@
 
     <!-- End of Contact Me Section -->
 
+    <!-- Portfolio Modals -->
+
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="modal-body">
+                      <!-- Project Details Go Here -->
+                      <h2 class="text-uppercase">SWE Website</h2>
+                      <p class="item-intro text-muted">Society of Women Engineers Webmaster</p>
+                      <img class="img-fluid d-block mx-auto" src="img/chicasswe.jpg" alt="Website SWE">
+                      <p>As part of my involvement in SWE for the 2017-2018 school year, I re-built the UCF SWE website from scratch . It uses Boostrap  for the basic CSS and HTML environment. I added new sections and pages such as the Newsletter (which uses the Mailchimp API), FAQ page, and a Gallery page. This website in now maintained by SWE at UCF.</p>
+                      <ul class="list-inline">
+                        <li>Click <a href="http://ucfswe.org/" target="_blank">here</a> to see the Website Live</li>
+                        <li>Click <a href="https://github.com/perlasamanez/SWE-Website" target="_blank">here</a> to see the Project in Github</li><br>
+                        <li><b>Date:</b> June 17 - August 17</li>
+                        <li><b>Category:</b> Website Development</li>
+                      </ul>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close Project</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="modal-body">
+                      <!-- Project Details Go Here -->
+                      <h2 class="text-uppercase">Knight Hacks 17</h2>
+                      <p class="item-intro text-muted">Knight Hacks Hackathon 2017, Organizer</p>
+                      <img class="img-fluid d-block mx-auto" src="img/knighthacks.jpg" alt="Knight Hacks">
+                      <p>I started as an organizer of the Knight Hacks team in January 2017. My role in the organization was to be the Volunteer/Mentor Coordinator. Before the Hackathon, I connected with UCF students and other organizations for event volunteering. I also coordinated an Info Session for volunteers and advertised the event in several classrooms. During the event, I was in charge of volunteering sign up and coordination. Overall, I believe it was a great experience for both students and volunteers/mentors to be part of this event. We all had fun and mostly did not sleep at all!</p>
+                      <ul class="list-inline">
+                        <li>Click <a href="http://knighthacks.org/" target="_blank">here</a> to see the Knight Hacks Website</li><br>
+                        <li><b>Date:</b> October 7, 2017</li>
+                        <li><b>Category:</b> Project Management</li>
+                      </ul>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close Project</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="modal-body">
+                      <!-- Project Details Go Here -->
+                      <h2 class="text-uppercase">Expiry Web App</h2>
+                      <p class="item-intro text-muted">Expiry Web Application, Walmart API Use</p>
+                      <img class="img-fluid d-block mx-auto" src="img/expiry.png" alt="Web App">
+                      <p>As part of a Hackathon at the University of Florida, SwampHacks, my team and I have created a web app for people to be aware of expiration dates from food products to not waste food. The website uses the Walmart API to search in their extensive catalog of products as long as the UPC code is inputted. It gives back the product, image, and the expected amount of days in which your food product can go bad. In order to test it out, we used XAMPP and ran it locally.</p>
+                      <ul class="list-inline">
+                        <li>Click <a href="https://github.com/perlasamanez/product-expiry" target="_blank">here</a> to see the Project in Github</li><br>
+                        <li><b>Date:</b> January 19 - 21, 2018</li>
+                        <li><b>Category:</b> Website Development</li>
+                      </ul>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close Project</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     <!-- Footer -->
     <footer class="py-3 bg-dark">
       <div class="container">
@@ -198,9 +330,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
 
   </body>
 
